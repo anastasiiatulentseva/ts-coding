@@ -8,6 +8,7 @@ import Footer from "./components/shared/Footer.tsx";
 import DummyPage from "./pages/DummyPage.tsx";
 import SimpleTodoListPage from "./pages/SimpleTodoListPage.tsx";
 import TodoListPage from "./pages/TodoListPage.tsx";
+import AdvancedTodoListPage from "./pages/AdvancedTodoListPage.tsx";
 
 const App: React.FC = () => {
   return (
@@ -38,6 +39,7 @@ const App: React.FC = () => {
           <Route path="/terms" element={<DummyPage />} />
           <Route path="/todo1" element={<SimpleTodoListPage />} />
           <Route path="/todo2" element={<TodoListPage />} />
+          <Route path="/todo3" element={<AdvancedTodoListPage />} />
           <Route path="*" element={<DummyPage />} />
         </Routes>
       </Container>

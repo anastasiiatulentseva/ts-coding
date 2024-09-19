@@ -15,6 +15,9 @@ function HomePage() {
             <li>
               <Link to="/todo2">TODO list</Link>
             </li>
+            <li>
+              <Link to="/todo3">Advanced TODO list</Link>
+            </li>
           </ul>
           <h3>Subcategory 2</h3>
           <ul>

@@ -8,7 +8,7 @@ interface iTask {
   content: string;
 }
 
-function Todo2() {
+function Todo3() {
   const [tasks, setTasks] = useState<iTask[]>([]);
 
   function handleTaskAdd(taskContent: string) {
@@ -46,4 +46,4 @@ function Todo2() {
   );
 }
 
-export default Todo2;
+export default Todo3;
