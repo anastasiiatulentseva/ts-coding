@@ -19,13 +19,10 @@ function HomePage() {
               <Link to="/todo3">Advanced TODO list</Link>
             </li>
           </ul>
-          <h3>Subcategory 2</h3>
+          <h3>Tic Tac Toe</h3>
           <ul>
             <li>
-              <Link to="/page3">Future Page 3</Link>
-            </li>
-            <li>
-              <Link to="/page4">Future Page 4</Link>
+              <Link to="/tic-tac-toe">Classic variant</Link>
             </li>
           </ul>
           <h3>Subcategory 3</h3>

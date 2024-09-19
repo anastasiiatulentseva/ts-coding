@@ -9,6 +9,8 @@ import DummyPage from "./pages/DummyPage.tsx";
 import SimpleTodoListPage from "./pages/SimpleTodoListPage.tsx";
 import TodoListPage from "./pages/TodoListPage.tsx";
 import AdvancedTodoListPage from "./pages/AdvancedTodoListPage.tsx";
+import TicTacToePage from "./pages/TicTacToePage.tsx";
+import AboutPage from "./pages/AboutPage.tsx";
 
 const App: React.FC = () => {
   return (
@@ -34,12 +36,13 @@ const App: React.FC = () => {
       <Container className="custom-container">
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<DummyPage />} />
+          <Route path="/about" element={<AboutPage />} />
           <Route path="/privacy" element={<DummyPage />} />
           <Route path="/terms" element={<DummyPage />} />
           <Route path="/todo1" element={<SimpleTodoListPage />} />
           <Route path="/todo2" element={<TodoListPage />} />
           <Route path="/todo3" element={<AdvancedTodoListPage />} />
+          <Route path="/tic-tac-toe" element={<TicTacToePage />} />
           <Route path="*" element={<DummyPage />} />
         </Routes>
       </Container>
