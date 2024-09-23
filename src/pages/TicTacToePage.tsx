@@ -1,7 +1,7 @@
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
 import Markdown from "react-markdown";
-import Board from "../components/TicTacToe/Board.tsx";
 import { useState } from "react";
+import Game from "../components/TicTacToe/Game.tsx";
 
 function TicTacToePage() {
   const [reqVisible, setReqVisible] = useState(false);
@@ -68,7 +68,7 @@ function TicTacToePage() {
           <Card>
             <Card.Header>Implementation</Card.Header>
             <Card.Body>
-              <Board />
+              <Game />
             </Card.Body>
           </Card>
         </Col>

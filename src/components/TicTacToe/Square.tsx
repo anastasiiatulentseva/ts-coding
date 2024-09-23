@@ -1,24 +1,19 @@
 import "./board.scss";
+import { memo } from "react";
 
 function Square({
-  index,
   content,
   handleClick,
   gameOver,
 }: {
   index: number;
   content: string | null;
-  handleClick: (index: number) => void;
+  handleClick: () => void;
   gameOver: boolean;
 }): React.ReactElement {
-  const handleSelfClick = () => {
-    if (content || gameOver) return;
-    handleClick(index);
-  };
-
   return (
     <div
-      onClick={handleSelfClick}
+      onClick={handleClick}
       className={`cell ${content || gameOver ? "no-hover" : ""} `}
     >
       {content}
@@ -26,4 +21,4 @@ function Square({
   );
 }
 
-export default Square;
+export default memo(Square);
