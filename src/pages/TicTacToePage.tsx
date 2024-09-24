@@ -1,4 +1,4 @@
-import { Button, Card, Col, Container, Row } from "react-bootstrap";
+import { Card, Col, Container, Row } from "react-bootstrap";
 import Markdown from "react-markdown";
 import { useState } from "react";
 import Game from "../components/TicTacToe/Game.tsx";
@@ -35,20 +35,15 @@ function TicTacToePage() {
       <Row>
         <Col>
           <Card>
-            <Card.Header className="d-flex justify-content-between align-items-center">
-              <span>
-                Requirements{" "}
-                <Button
-                  variant="outline-light"
-                  size="sm"
-                  onClick={() => setReqVisible(!reqVisible)}
-                >
-                  {reqVisible ? "^" : "v"}
-                </Button>
-              </span>
+            <Card.Header
+              onClick={() => setReqVisible(!reqVisible)}
+              className="d-flex justify-content-between align-items-center"
+            >
+              Requirements{" "}
             </Card.Header>
             <Card.Body
               style={{
+                padding: "4px 16px",
                 maxHeight: reqVisible ? "1000px" : "0",
                 overflow: "hidden",
                 transition: "max-height 0.5s ease",
