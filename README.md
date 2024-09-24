@@ -1,50 +1,62 @@
-# React + TypeScript + Vite
+# TS coding exercises
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is built with React and TypeScript, using Vite as the build tool.
 
-Currently, two official plugins are available:
+## Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Before you begin, ensure you have met the following requirements:
 
-## Expanding the ESLint configuration
+- You have installed Node.js and npm.
+- You have a code editor like Visual Studio Code or WebStorm.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Getting Started
 
-- Configure the top-level `parserOptions` property like this:
+To get a local copy up and running, follow these simple steps.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Installation
+
+1. **Clone the repository:**
+
+    ```sh
+    git clone git@github.com:anastasiiatulentseva/ts-coding.git
+    ```
+
+2. **Navigate to the project directory:**
+
+    ```sh
+    cd ts-coding
+    ```
+
+3. **Install the dependencies:**
+
+    ```sh
+    npm install
+    ```
+
+### Running the Project
+
+1. **Start the development server:**
+
+    ```sh
+    npm run dev
+    ```
+
+2. **Open your browser and navigate to:**
+
+    ```
+    http://localhost:5173
+    ```
+
+### Building for Production
+
+To create a production build, run:
+
+```sh
+npm run build
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+To preview the production build locally, run:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```sh
+npm run build
 ```
